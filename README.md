@@ -1,5 +1,5 @@
 # The Wall PROJ
-Made By Jelle Stekelenburg and Tin Xian Hu
+Jelle Stekelenburg en Tin Xian Hu
 
 https://imagechimp.tinxian.nl
 # Wireframe
