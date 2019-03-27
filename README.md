@@ -6,6 +6,10 @@ https://imagechimp.tinxian.nl
 
 https://x0nxtq.axshare.com/
 
+# Bezig met
 
+* inlog systeem
+* upload pagina (voor foto's)
+* CSS
 
 # More info coming soon!
