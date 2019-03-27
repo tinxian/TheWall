@@ -11,5 +11,3 @@ https://x0nxtq.axshare.com/
 * inlog systeem
 * upload pagina (voor foto's)
 * CSS
-
-# More info coming soon!
