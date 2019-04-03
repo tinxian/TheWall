@@ -11,3 +11,4 @@ https://x0nxtq.axshare.com/
 * inlog systeem
 * upload pagina (voor foto's)
 * CSS
+* PHPMYADMIN en MYSQLI Fixen op Webhost.
