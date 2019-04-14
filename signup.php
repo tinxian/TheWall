@@ -27,10 +27,10 @@
         else if ($_GET['error'] == "usertaken") {
           echo '<p class="signuperror">Username is already taken!</p>';
         }
-      }
-      else if ($_GET['signup'] == "success") {
+        else if ($_GET['signup'] == "success") {
         echo '<p class="signupsuccess">Signup successful!</p>';
       }
+}
       ?>
       <form action="includes/signup.inc.php" method="post">
         <input type="text" name="uid" placeholder="Username">
@@ -39,11 +39,12 @@
         <input type="password" name="pwd-repeat" placeholder="Repeat password">
         <button type="submit" name="signup-submit">Signup</button>
       </form>
+
       <!-- Password recovery system -->
       <?php
       if (isset($_GET["newpwd"])) {
         if ($_GET["newpwd"] == "passwordupdated") {
-          echo '<p class="signupsuccess">Your password has been reset!</p>'
+          echo '<p class="signupsuccess">Your password has been reset!</p>';
         }
       }
       ?>
