@@ -22,27 +22,26 @@ session_start();
     <nav>
         <ul>
          <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
-         <li><a href="about.html">About us</a></li>
-         <li><a href="uploadfiles.php">Upload</a></li>
-         <li><a href="index.php">Home</a></li>
-        </ul>
-        <div>
+        <div class="sign_up">
             <?php
             if (isset($_SESSION['userId'])) {
             echo  '<form action="includes/logout.inc.php" method="post">
-                  <button type="submit" name="logout-submit">Logout</button>
+                  <button class="inlog_b" type="submit" name="logout-submit">Logout</button>
                   </form>';
             }
             else {
             echo  '<form action="includes/login.inc.php" method="post">
                    <input type="text" name="mailuid" placeholder="Username/E-mail...">
                    <input type="password" name="pwd" placeholder="Password...">
-                   <button type="submit" name="login-submit">Login</button>
+                   <button class="inlog_b" type="submit" name="login-submit">Login</button>
                    </form>
                    <a href="signup.php">Signup</a>';
             }
             ?>
         </div>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="index.php">Home</a></li>
+       </ul>
     </nav>
   </header>
 </body>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*Het modale venster opmaken*/
+.modaal-achtergrond {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.modaal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  min-width: 40vw;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 1em;
+  overflow-y: auto;
+  animation: opkomen 0.2s ease-in-out forwards;
+  overflow-x: hidden;
+}
+
+.photo_details {
+  text-align: center;
+  font-size: 20px;
+}
+
+.modaal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80vw;
+  max-height: 65vh;
+}
+.photo_modaal img{
+  width: 80vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+@keyframes opkomen {
+  0%    {transform: scale(0)}
+  100%  {transform: scale(1)}
+}
+
+/*Sluitknop */
+.sluit-knop {
+  justify-self: end;
+  background-color: white;
+  font-size: 2em;
+  font-weight: 300;
+  border: 0;
+  transition: 0.2s;
+  padding-right: 60px;
+}
+.sluit-knop:hover {
+  color: red;
+  transition: 0.2s;
+}

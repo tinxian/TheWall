@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" href="css/signup.css">
 <main>
+  <br><br><br>
   <div class="wrapper-main">
     <section class="section-default">
       <h1>Signup</h1>

@@ -1,13 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 main {
+  padding-top: 10px;
   text-align: center;
-  padding-top: 250px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.photo_container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.gallery-container h3,
+.gallery-container p,
+.gallery-container a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sign_up input {
+  background-color: rgba(0,0,0,.0);
+  border: 1px solid #00e8ff;
+  font-family: 'Roboto', sans-serif;
+  color: #00e8ff;
+}
+
+.sign_up {
   color: #fff;
 }
 
+.gallery-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+}
+
+.line {
+  height: 1px;
+  width: 100vw;
+  background-color: #000;
+}
+
+
 .gallery-container img {
-  height: 250px;
   width: 250px;
+
+}
+
+.inlog_b {
+  background-color: #00c6d2;
+  color: #fff;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: none;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+
+.inlog_b:hover{
+  transition: 0.5s;
+  background-color: #018a93;
+}
+
+
+/*Upload box */
+.upload_box {
+  height: 300px;
+  background-image: url(../images/upload.png);
+  background-position: center;
+}
+
+.upload_box input {
+  background-color: rgba(0,0,0,.3);
+  border: 1px solid black;
+  border-radius: 4px;
+  line-height: 1px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.upload_box h3 {
+  padding-top: 30px;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0,0,0,.3);
+}
+
+.upload_box p {
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0,0,0,.3);
+}
+
+.upload_box button {
+  background-color: rgba(0,0,0,.3);
+  border: 2px solid #fff;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.upload_box button:hover {
+  transition: 0.5s;
+  background-color: rgba(255,255,255,.5);
 }

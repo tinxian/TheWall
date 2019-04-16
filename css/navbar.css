@@ -45,3 +45,15 @@ header nav li a:hover {
   background-color: #111;
   transition: 0.5s;
 }
+
+
+.sign_up{
+  float: left;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.sign_up a{
+  color: #fff;
+  text-decoration: none;
+}
