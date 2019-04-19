@@ -7,6 +7,7 @@
   <br><br><br>
   <div class="wrapper-main">
     <section class="section-default">
+      <br><br><br><br><br><br><br>
       <h1>Signup</h1>
       <?php
       if (isset($_GET['error'])) {
@@ -33,12 +34,13 @@
       }
 }
       ?>
+
       <form action="includes/signup.inc.php" method="post">
         <input type="text" name="uid" placeholder="Username">
         <input type="text" name="mail" placeholder="E-mail">
         <input type="password" name="pwd" placeholder="Password">
         <input type="password" name="pwd-repeat" placeholder="Repeat password">
-        <button type="submit" name="signup-submit">Signup</button>
+        <button id="signup_b" type="submit" name="signup-submit">Signup</button>
       </form>
 
       <!-- Password recovery system -->
@@ -49,7 +51,7 @@
         }
       }
       ?>
-      <a href="reset-password.php">Forgot your password?</a>
+      <a class="reset_ww"href="reset-password.php">Forgot your password?</a>
     </section>
   </div>
 </main>

@@ -21,7 +21,7 @@ session_start();
   <header>
     <nav>
         <ul>
-         <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
+         <a href="index.php"><div class="nav_logo"></div></a>
         <div class="sign_up">
             <?php
             if (isset($_SESSION['userId'])) {
@@ -39,7 +39,7 @@ session_start();
             }
             ?>
         </div>
-        <li><a href="about.html">About us</a></li>
+        <li><a href="about.php">About us</a></li>
         <li><a href="index.php">Home</a></li>
        </ul>
     </nav>

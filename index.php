@@ -19,7 +19,26 @@
 <body>
   <main>
 
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <?php
+    if (isset($_SESSION['userId'])) {
+    echo '<div class="upload_box">
+          <h3>Upload your photos!</h3>
+          <p>Upload your content here, And share your photos with everyone!</p>
+          <div class="gallery-upload">
+          <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="filename" placeholder="File name..."><br><br>
+            <input type="text" name="filetitle" placeholder="Image title..."><br><br>
+            <input type="text" name="filedesc" placeholder="Image description..."><br><br>
+            <input type="file" name="file"><br><br>
+            <button type="submit" name="submit">upload</button>
+            </div>';
+    } else {
+      echo "<h3>You need to log in if you want to upload photos</h3>";
+    }
+    ?>
+
+    <br><br><br><br>
     <div class="gallery-container">
       <?php
       include_once 'includes/dbh.inc.php';
@@ -45,27 +64,9 @@
       }
       ?>
     </div>
-    <img src="" alt="">
 
     <br><br><br><br><br>
 
-<?php
-if (isset($_SESSION['userId'])) {
-echo '<div class="upload_box">
-      <h3>Upload your photos!</h3>
-      <p>Upload your content here, And share your photos with everyone!</p>
-      <div class="gallery-upload">
-      <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
-        <input type="text" name="filename" placeholder="File name..."><br><br>
-        <input type="text" name="filetitle" placeholder="Image title..."><br><br>
-        <input type="text" name="filedesc" placeholder="Image description..."><br><br>
-        <input type="file" name="file"><br><br>
-        <button type="submit" name="submit">upload</button>
-        </div>';
-} else {
-  echo "<h3>You need to log in if you want to upload photos</h3>";
-}
-?>
       </form>
     </div>
 
