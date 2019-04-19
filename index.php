@@ -24,17 +24,17 @@
     if (isset($_SESSION['userId'])) {
     echo '<div class="upload_box">
           <h3>Upload your photos!</h3>
-          <p>Upload your content here, And share your photos with everyone!</p>
+          <p>Upload your images here and share your photos with everyone!</p>
           <div class="gallery-upload">
           <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
             <input type="text" name="filename" placeholder="File name..."><br><br>
             <input type="text" name="filetitle" placeholder="Image title..."><br><br>
             <input type="text" name="filedesc" placeholder="Image description..."><br><br>
-            <input type="file" name="file"><br><br>
-            <button type="submit" name="submit">upload</button>
+            <input type="file" name="file"><br>
+            <button type="submit" name="submit">Upload</button>
             </div>';
     } else {
-      echo "<h3>You need to log in if you want to upload photos</h3>";
+      echo "<h3 id='hoofd'>You need to log in if you want to upload photos</h3>";
     }
     ?>
 

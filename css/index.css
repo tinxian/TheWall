@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #2e3035;
 }
 
 main {
@@ -18,6 +20,13 @@ main {
   height: 400px;
 }
 
+.photo_container:hover {
+  cursor: pointer;
+}
+
+#hoofd {
+  color: #fff;
+}
 .gallery-container h3,
 .gallery-container p,
 .gallery-container a {
@@ -37,7 +46,7 @@ main {
 }
 
 .sign_up input {
-  background-color: rgba(0,0,0,.0);
+  background-color: rgba(0, 0, 0, .0);
   border: 1px solid #00e8ff;
   font-family: 'Roboto', sans-serif;
   color: #00e8ff;
@@ -47,7 +56,7 @@ main {
   color: #fff;
 }
 
-.gallery-container{
+.gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
@@ -64,22 +73,20 @@ main {
   background-color: #000;
 }
 
-
 .gallery-container img {
   width: 250px;
-
 }
 
 #signup_b {
   border: 1px solid black;
-  background-color: rgba(255,169,0,.44);
+  background-color: rgba(255, 169, 0, .44);
   padding: 5px 10px;
   transition: 0.5s;
 }
 
 #signup_b:hover {
   transition: 0.5s;
-  background-color: rgba(255,169,0,1);
+  background-color: rgba(255, 169, 0, 1);
 }
 
 .reset_ww {
@@ -98,11 +105,10 @@ main {
   transition: 0.5s;
 }
 
-.inlog_b:hover{
+.inlog_b:hover {
   transition: 0.5s;
   background-color: #018a93;
 }
-
 
 /*Upload box */
 .upload_box {
@@ -112,7 +118,7 @@ main {
 }
 
 .upload_box input {
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, .3);
   border: 1px solid black;
   border-radius: 4px;
   line-height: 1px;
@@ -123,16 +129,16 @@ main {
 .upload_box h3 {
   padding-top: 30px;
   color: white;
-  text-shadow: 3px 3px 3px rgba(0,0,0,.3);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 
 .upload_box p {
   color: white;
-  text-shadow: 3px 3px 3px rgba(0,0,0,.3);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 
 .upload_box button {
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, .3);
   border: 2px solid #fff;
   font-family: 'Roboto', sans-serif;
   padding: 4px 10px;
@@ -145,13 +151,11 @@ main {
 
 .upload_box button:hover {
   transition: 0.5s;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, .5);
 }
 
-
-
 @media screen and (max-width: 1400px) {
-  .gallery-container{
+  .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
@@ -160,7 +164,7 @@ main {
 }
 
 @media screen and (max-width: 950px) {
-  .gallery-container{
+  .gallery-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
@@ -176,5 +180,4 @@ main {
   .upload_box {
     font-size: 15px;
   }
-
 }
