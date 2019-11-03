@@ -51,7 +51,7 @@ if (isset($_POST["reset-request-submit"])) {
 require_once __DIR__ . '/SMTPMailer.php';
 
 $mail = new SMTPMailer('mail.tinxian.nl', 587);
-$mail->Auth('imagechimp@tinxian.nl', 'test123');
+$mail->Auth('imagechimp@tinxian.nl', '');
 
 $mail->addTo($to);
 $mail->From('imagechimp@tinxian.nl');
